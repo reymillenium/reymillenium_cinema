@@ -1,0 +1,10 @@
+
+
+/* Cambio el mouse para todos los checkboxes */
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+
+
+

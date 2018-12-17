@@ -1,0 +1,12 @@
+/*
+
+************************************************************************************************************************
+                                   *** GENERAL DESIGN OF THE TEMPLATE ***
+                                             By: Reinier Garcia
+************************************************************************************************************************
+*/
+
+body {
+    /* Muestra el scroll vertical en todas las páginas. Así evitamos cambios visuales en el diseño */
+    overflow-y: scroll;
+}

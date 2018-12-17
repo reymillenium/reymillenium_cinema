@@ -1,0 +1,295 @@
+/*----------------------------------------------------------------------------*/
+/*-------------------  Tablas Estilo Standard Light Blue  --------------------*/
+/*----------------------------------------------------------------------------*/
+
+/* Divisiones que contengan una tabla (class = div-tabla) */
+div.div-tabla {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Todas las tablas estilo: Standard Light Blue */
+table.standard-light-blue {
+    border-collapse: separate;
+    border-spacing: 0px;
+
+    /*background-color: #92cd91;*/
+    background-color: transparent;
+
+    margin: 0 auto;
+    caption-side: bottom;
+}
+
+/* Captions de las tablas estilo: Standard Light Blue */
+table.standard-light-blue caption {
+    text-align: justify;
+    /*vertical-align: middle;*/
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: smaller;
+}
+
+/* Encabezados y celdas de tablas estilo Standard Light Blue */
+table.standard-light-blue th, table.standard-light-blue td {
+    border: 1px solid #fff;
+    padding: .5em;
+    text-align: center;
+
+    /* Para que un componente no sea seleccionable */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Encabezados de Tablas estilo: Standard Light Blue */
+table.standard-light-blue th {
+    /* Color azulito original*/
+    /*background: #328aa4 url(../images/tr_back.gif) repeat-x;*/
+
+    /* Color negro especial */
+    /*background: #333 repeat-x;*/
+
+    /* Gris brillante */
+    /*background: #636b6f;*/
+
+    /* Negro especial del diseño bootstrap*/
+    background: #343A40;
+
+    color: #fff;
+}
+
+/* Redondeo borde superior izquierdo del primer encabezado de columna */
+table.standard-light-blue th:first-of-type {
+    border-top-left-radius: 12px;
+}
+
+/* Redondeo borde superior derecho del último encabezado de columna */
+table.standard-light-blue th:last-of-type {
+    border-top-right-radius: 12px;
+}
+
+/* Redondeo borde inferior izquierdo de la primera casilla de la última fila */
+table.standard-light-blue tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 12px;
+}
+
+/* Redondeo borde inferior derecho de la última casilla de la última fila */
+table.standard-light-blue tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 12px;
+}
+
+/* Filas impares de celdas */
+table.standard-light-blue tr:nth-of-type(odd) td {
+    background: #e5f1f4;
+}
+
+/* Filas pares de celdas */
+table.standard-light-blue tr:nth-of-type(even) td {
+    background: #e5f1d1;
+}
+
+/* *** CAMBIAR EL COLOR DE LAS CELDAS O FILAS IMPARES AL PASAR EL MOUSE POR ENCIMA *** ------------------------------ */
+
+/* Al pasar el mouse por encima de las celdas en las filas impares de celdas (cambiar casilla/celda solamente) */
+/*table.standard-light-blue tr:nth-of-type(odd) td:hover {*/
+/*background: #f5f1e4;*/
+/*}*/
+
+/* Al pasar el mouse por encima de las filas impares de celdas (cambiar la fila entera) */
+table.standard-light-blue tr:nth-of-type(odd):hover td {
+    background: #f5f1e4;
+}
+
+/* *** CAMBIAR EL COLOR DE LAS CELDAS O FILAS PARES AL PASAR EL MOUSE POR ENCIMA *** -------------------------------- */
+
+/* Al pasar el mouse por encima de las casillas en las filas pares de celdas (cambiar casilla/celda solamente) */
+/*table.standard-light-blue tr:nth-of-type(even) td:hover {*/
+/*background: #f5f1e4;*/
+/*}*/
+
+/* Al pasar el mouse por encima de las filas pares de celdas (cambiar la fila entera) */
+table.standard-light-blue tr:nth-of-type(even):hover td {
+    background: #f5f1e4;
+}
+
+/* *** CAMBIAR EL COLOR DE LAS CELDAS O FILAS IMPARES AL PRESIONAR EL MOUSE *** ------------------------------------- */
+
+/* Al pinchar con el mouse en una casilla de una fila impar (cambia la casilla solamente) */
+/*table tr:nth-of-type(odd) td:active {background: border-box;}*/
+/*table tr:nth-of-type(odd) td:active {background: #e5f1f4;}*/
+/*table.standard-light-blue tr:nth-of-type(odd) td:active {*/
+/*background: #eed0ee;*/
+/*!*background: black;*!*/
+/*}*/
+
+/* Al pinchar con el mouse en una fila impar (cambia la fila entera) */
+table.standard-light-blue tr:nth-of-type(odd):active td {
+    background: #eed0ee;
+    /*background: black;*/
+}
+
+/* *** CAMBIAR EL COLOR DE LAS CELDAS O FILAS PARES AL PRESIONAR EL MOUSE *** --------------------------------------- */
+
+/* Al pinchar con el mouse encima de una casilla de una fila par (cambia la casilla solamente) */
+/*table tr:nth-of-type(even) td:active {background: border-box;}*/
+/*table tr:nth-of-type(even) td:active {background: #e5f1d1;}*/
+/*table.standard-light-blue tr:nth-of-type(even) td:active {*/
+/*background: #eed0ee;*/
+/*}*/
+
+/* Al pinchar con el mouse encima de una fila par (cambia la fila entera) */
+table.standard-light-blue tr:nth-of-type(even):active td {
+    background: #eed0ee;
+}
+
+/* ---------------------- *** DEFINE EL COLOR DE LAS FILAS CON UN CHECKBOX CHECKEADO (NOT WORKING ------------------- */
+
+/*table.standard-light-blue tr td {*/
+    /*background: #eed0ee;*/
+/*}*/
+
+/*table.standard-light-blue tr td input[type=checkbox]:checked + tr td {*/
+/*table.standard-light-blue tr input[type=checkbox]:checked + table.standard-light-blue tr td {*/
+    /*color: red;*/
+    /*font-style: italic;*/
+    /*text-decoration: line-through;*/
+    /*!*background: #eed0ee;*!*/
+    /*background: red;*/
+/*}*/
+
+.selected_checkbox_row {
+    background-color: yellow;
+    /*background: #eed0ee;*/
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Elimina el subrayado de los enlaces dentro de la tabla*/
+table.standard-light-blue a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                                                                                     */
+/*----------------------------------- ***   Tablas Estilo New Style *** ----------------------------------------------*/
+/*                                                                                                                     */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Divisiones que contengan una tabla (class = div-tabla) */
+div.div-tabla {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Todas las tablas estilo: new-style */
+table.new-style {
+    /*background-color: #92cd91;*/
+    /*border-spacing: 0px;*/
+    /*caption-side: bottom;*/
+    margin: 0 auto;
+
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 64%;
+    border-collapse: collapse;
+}
+
+/* Captions de las tablas estilo: Standard Light Blue */
+table.new-style caption {
+    text-align: justify;
+    /*vertical-align: middle;*/
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: smaller;
+}
+
+/* Encabezados y celdas de tablas estilo Standard Light Blue */
+table.new-style th, table.new-style td {
+    border: 1px solid #fff;
+    padding: .5em;
+    text-align: center;
+
+    /* Para que un componente no sea seleccionable */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    border: 1px solid transparent;
+    height: 30px;
+}
+
+/* Encabezados de Tablas estilo: Standard Light Blue */
+table.new-style th {
+    /*background:#328aa4 url(../images/tr_back.gif) repeat-x;*/
+    /*color:#fff;*/
+
+    background: #D3D3D3;
+    font-weight: bold;
+}
+
+table.new-style td {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Redondeo borde superior izquierdo del primer encabezado de columna */
+table.new-style th:first-of-type {
+    border-top-left-radius: 12px;
+}
+
+/* Redondeo borde superior derecho del último encabezado de columna */
+table.new-style th:last-of-type {
+    border-top-right-radius: 12px;
+}
+
+/* Redondeo borde inferior izquierdo de la primera casilla de la última fila */
+table.new-style tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 12px;
+}
+
+/* Redondeo borde inferior derecho de la última casilla de la última fila */
+table.new-style tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 12px;
+}
+
+/* Celdas en filas impares */
+table.new-style tr:nth-of-type(odd) td {
+    background: #FEFEFE;
+}
+
+/* Celdas en filas pares */
+table.new-style tr:nth-of-type(even) td {
+    background: #F1F1F1;
+}
+
+/* Al pasar el mouse por encima de las filas impares de celdas */
+table.new-style tr:nth-of-type(odd) td:hover {
+    background: #666;
+    color: #FFF;
+}
+
+/* Al pasar el mouse por encima de las filas pares de celdas */
+table.new-style tr:nth-of-type(even) td:hover {
+    background: #666;
+    color: #FFF;
+}
+
+/* Al pinchar con el mouse en una casilla de una fila impar */
+/*table tr:nth-of-type(odd) td:active {background: border-box;}*/
+/*table tr:nth-of-type(odd) td:active {background: #e5f1f4;}*/
+table.new-style tr:nth-of-type(odd) td:active {
+    background: #eed0ee;
+}
+
+/* Al pinchar con el mouse encima de una casilla de una fila par */
+/*table tr:nth-of-type(even) td:active {background: border-box;}*/
+/*table tr:nth-of-type(even) td:active {background: #e5f1d1;}*/
+table.new-style tr:nth-of-type(even) td:active {
+    background: #eed0ee;
+}
+
